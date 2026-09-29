@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novapress - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+3&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="fecha">Domingo, 13 de septiembre de 2026</div>
+    <div class="acciones">
+      <a href="#">Suscribirse</a> | <a href="#">Iniciar sesión</a> <span class="icono-buscar">🔍</span>
+    </div>
+  </div>
+
+  <header class="sticky">
+    <div class="logo">
+      <div class="logo-square">N</div>
+      <div>
+        <div class="site-name">Novapress</div>
+        <div class="subtitulo">PORTAL DE NOTICIAS</div>
+      </div>
+    </div>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="#" class="active">NOTICIAS</a></li>
+        <li><a href="#">FAVORITOS</a></li>
+        <li><a href="#">CONTACTO</a></li>
+        <li><a href="#">SERVICIOS</a></li>
+        <li><a href="#">ACERCA DE</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menú hamburguesa para móvil -->
+    <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <div class="header-divider"></div>
+
+  <main>
+    <section class="hero">
+      <article class="hero-left">
+        <h1>La información que importa,<br />cuando la necesitás</h1>
+        <p>Cobertura rigurosa, análisis profundo y periodismo independiente. Todo lo que necesitás saber del mundo, en un solo lugar.</p>
+        <div class="cta-buttons">
+          <button class="btn-rojo">VER TODAS LAS NOTICIAS</button>
+          <button class="btn-oscuro">NOTICIAS DESTACADAS</button>
+        </div>
+      </article>
+
+      <aside class="hero-right">
+        <img src="img/persona-noticias.jpg" alt="Persona mirando un quiosco de noticias" />
+        <figcaption>La inteligencia artificial transforma la industria manufacturera global</figcaption>
+      </aside>
+    </section>
+
+    <!-- Ticker de titulares -->
+    <section class="ticker">
+      <div class="ticker-text" id="ticker-text">
+        <!-- Noticias dinámicas se añadirán con JS -->
+      </div>
+    </section>
+
+    <!-- Sección Destacadas -->
+    <section class="destacadas">
+      <h2>Destacadas</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="img/tecnologia.jpg" alt="Tecnología" />
+          <h3>Tecnología</h3>
+          <p>Últimas innovaciones y avances tecnológicos.</p>
+        </article>
+        <article class="card">
+          <img src="img/economia.jpg" alt="Economía" />
+          <h3>Economía</h3>
+          <p>Noticias y análisis de economía mundial.</p>
+        </article>
+        <article class="card">
+          <img src="img/medio-ambiente.jpg" alt="Medio Ambiente" />
+          <h3>Medio Ambiente</h3>
+          <p>Temas ecológicos y sostenibilidad.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Grilla secundaria -->
+    <section class="grilla-secundaria">
+      <h2>Más Noticias</h2>
+      <div class="grilla">
+        <article class="noticia-chica">
+          <h4>Innovación en IA</h4>
+          <p>Cómo la inteligencia artificial cambia la educación.</p>
+        </article>
+        <article class="noticia-chica">
+          <h4>Mercados al alza</h4>
+          <p>El impacto de la recuperación económica global.</p>
+        </article>
+        <article class="noticia-chica">
+          <h4>Nuevo acuerdo climático</h4>
+          <p>Estados unen fuerzas para combatir el cambio climático.</p>
+        </article>
+        <article class="noticia-chica">
+          <h4>Realidad aumentada</h4>
+          <p>Tecnologías que transforman el turismo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+      <h2>Testimonios</h2>
+      <div class="testimonios-lista">
+        <blockquote>
+          <p><em>"Una fuente confiable y actualizada de noticias."</em></p>
+          <footer>— María G.</footer>
+        </blockquote>
+        <blockquote>
+          <p><em>"Su cobertura es profunda y clara."</em></p>
+          <footer>— Jorge L.</footer>
+        </blockquote>
+        <blockquote>
+          <p><em>"Me mantiene informado al instante."</em></p>
+          <footer>— Andrea M.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CTA Newsletter -->
+    <section class="newsletter">
+      <h2>Suscríbete a nuestro boletín</h2>
+      <form id="newsletter-form">
+        <input type="email" placeholder="Tu correo electrónico" required />
+        <button type="submit">Suscribirse</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Novapress - Contacto: contacto@novapress.com</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
