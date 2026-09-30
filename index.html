@@ -7,6 +7,12 @@
   <title>Novapress - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+3&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Agrega un desplazamiento suave al hacer clic en el menú */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,11 +33,11 @@
     </div>
     <nav>
       <ul id="nav-list">
-        <li><a href="#" class="active">NOTICIAS</a></li>
-        <li><a href="#">FAVORITOS</a></li>
-        <li><a href="#">CONTACTO</a></li>
-        <li><a href="#">SERVICIOS</a></li>
-        <li><a href="#">ACERCA DE</a></li>
+        <li><a href="#noticias" class="active">NOTICIAS</a></li>
+        <li><a href="#favoritos">FAVORITOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#acerca-de">ACERCA DE</a></li>
       </ul>
     </nav>
 
@@ -46,13 +52,13 @@
   <div class="header-divider"></div>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="acerca-de">
       <article class="hero-left">
         <h1>La información que importa,<br />cuando la necesitás</h1>
         <p>Cobertura rigurosa, análisis profundo y periodismo independiente. Todo lo que necesitás saber del mundo, en un solo lugar.</p>
         <div class="cta-buttons">
           <button class="btn-rojo">VER TODAS LAS NOTICIAS</button>
-          <button class="btn-oscuro">NOTICIAS DESTACADAS</button>
+          <a href="#noticias" style="text-decoration: none;"><button class="btn-oscuro">NOTICIAS DESTACADAS</button></a>
         </div>
       </article>
 
@@ -69,8 +75,8 @@
       </div>
     </section>
 
-    <!-- Sección Destacadas -->
-    <section class="destacadas">
+    <!-- Sección Destacadas (ID noticias agregado) -->
+    <section class="destacadas" id="noticias">
       <h2>Destacadas</h2>
       <div class="cards">
         <article class="card">
@@ -114,6 +120,70 @@
       </div>
     </section>
 
+    <!-- Sección Favoritos (Reutiliza la clase destacadas para mantener el margen de tu diseño original) -->
+    <section class="destacadas" id="favoritos">
+      <h2>Tus Favoritos</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="img/favorito1.jpg" alt="Noticia guardada 1" />
+          <h3>El futuro del trabajo</h3>
+          <p>Análisis sobre las tendencias laborales para la próxima década.</p>
+        </article>
+        <article class="card">
+          <img src="img/favorito2.jpg" alt="Noticia guardada 2" />
+          <h3>Descubrimiento espacial</h3>
+          <p>Nuevos hallazgos en la exploración de Marte y sus implicaciones.</p>
+        </article>
+        <article class="card">
+          <img src="img/favorito3.jpg" alt="Noticia guardada 3" />
+          <h3>Salud y bienestar</h3>
+          <p>Guía completa para mejorar tu calidad de sueño este año.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección Otras Noticias (Reutiliza la clase grilla-secundaria) -->
+    <section class="grilla-secundaria" id="otras-noticias">
+      <h2>Otras Noticias</h2>
+      <div class="grilla">
+        <article class="noticia-chica">
+          <h4>Deportes</h4>
+          <p>Resumen completo de la jornada de este fin de semana en las ligas europeas.</p>
+        </article>
+        <article class="noticia-chica">
+          <h4>Cultura</h4>
+          <p>Se inaugura la nueva exposición de arte contemporáneo en el centro de la ciudad.</p>
+        </article>
+        <article class="noticia-chica">
+          <h4>Política</h4>
+          <p>Continúa el debate legislativo sobre la nueva ley de modernización de infraestructura.</p>
+        </article>
+        <article class="noticia-chica">
+          <h4>Ciencia</h4>
+          <p>Nuevos avances clínicos muestran resultados prometedores en enfermedades autoinmunes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección Servicios (Reutiliza la clase destacadas) -->
+    <section class="destacadas" id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Suscripción Premium</h3>
+          <p>Acceso ilimitado a reportajes exclusivos, sin publicidad y con contenido descargable.</p>
+        </article>
+        <article class="card">
+          <h3>Alertas al Móvil</h3>
+          <p>Notificaciones inmediatas de última hora directamente en tu celular o tablet.</p>
+        </article>
+        <article class="card">
+          <h3>Hemeroteca Digital</h3>
+          <p>Consulta nuestro archivo histórico completo, con ediciones que datan desde el año 2000.</p>
+        </article>
+      </div>
+    </section>
+
     <!-- Testimonios -->
     <section class="testimonios">
       <h2>Testimonios</h2>
@@ -143,7 +213,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="contacto">
     <p>© 2026 Novapress - Contacto: contacto@novapress.com</p>
   </footer>
 
